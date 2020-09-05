@@ -1,19 +1,19 @@
 # SITE CONFIGURATION
 baseurl:
-url: "https://devYurim.github.io"
+url: "https://rubai1597.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: devYurim
+  title: Rubai's Blog
   avatar: assets/img/blogmark.png
-  favicon: assets/favicon.ico
+  # favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-  description: "developer blog" # used by search engines
+  description: "Slow and Easy" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Intelligent System Lab Researcher</p>
+     <p>Deep Learning Researcher</p>
 
   header_text_feature_image:
   footer_text: >
@@ -21,14 +21,14 @@ theme_settings:
 
   # Icons
   rss: true
-  email_address: "soaka94@naver.com" # Full email address, e.g. "sam@example.com"
+  email_address: "rubai1597@naver.com" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github: "devYurim"
+  github: "rubai1597"
   google_plus:
   instagram:
   linkedin:  # Full URL
