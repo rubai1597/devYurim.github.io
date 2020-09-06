@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Classification
+title: Paper/Classification
 permalink: '/Paper/Classification'
 ---
 
