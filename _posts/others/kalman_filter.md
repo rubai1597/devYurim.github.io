@@ -1,0 +1,24 @@
+---
+layout: posts
+title: Kalman filter의 이해
+comments: true
+categories: [Others]
+tags: [Kalman filter, tracking]
+use_math: true
+---
+
+
+처음 포스팅을 하면서 무엇을 할까 고민하다가 최근에 tracking과 관련된 연구를 계속하고 있어서 그와 관련된 내용을 정리하려고 한다. 그래서 오늘 내용에서는 tracking에서 아주 중요한 역할을 했었던 (요새는 deep learning의 등장으로 그 역할이 많이 줄어든 것 같지만) Kalman filter에 대해서 간략하게 다뤄보려고 한다.
+
+# 1. Introduction
+
+Kalman filter는 GPS, robot motion 등과 같이 다양한 분야에서 널리 사용되고 있던 알고리즘 중 하나로 일반적으로 어떤 모델의 다음 상태(state)를 예측하기 위해 사용한다. 앞에서도 언급했듯이 tracking 과정에서는 주로 bounding box의 정보를 활용하여 추적하고 있는 물체가 다음 상황에서 어떤 위치에 등장할지를 예측(predict)하고 다음 입력을 받아 수정(correct)하는 과정을 거친다.
+
+Kalman filter는 다음 두 가지의 가정을 바탕으로 진행되며 이후에 나올 EKF (Extended Kalman Filter)의 기본이 되는 내용이다.
+
+* Linear model
+* Gaussian distribution
+
+공학적인 문제를 다루는 과정에서 이 두가지의 가정은 익숙할 것이다. 특히 LTI(Linear Time-Invariant) system을 접했다면 linear model이 의미하는 것을 쉽게 알 수 있을 것이다. 어떤 입력 $\bm{x}$가 주어졌을 때 출력이 $y$인 linear한 model은 다음 관계를 갖는다.
+
+$y=Ax+b, A:\text{state transition matrix}, b: \text{bias}$
