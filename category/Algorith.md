@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Others
-permalink: '/Others'
+permalink: '/Summary/Algorithm'
 ---
 
 Another sample category page.
