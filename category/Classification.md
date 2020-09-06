@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Papers/Classification
-permalink: '/Papers/Classification'
+title: Paper/Classification
+permalink: '/Paper/Classification'
 ---
 
 Another sample category page.
