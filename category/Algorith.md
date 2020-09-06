@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Others
+title: Algorithm
 permalink: '/Summary/Algorithm'
 ---
 
